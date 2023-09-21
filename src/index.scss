@@ -11,48 +11,176 @@ body {
 
 
 // ----------------------------------------------------- Navigation Menu -----------------------------------------------------
-.navbar-menu{
+.nav-bar-container {
+  width: 100vw;
   display: flex;
-  background: transparent;
-  height: 100px;
-  align-items: center;
-  padding: 10px 5%;
-  box-shadow: 0px 2px 2px rgb(168, 159, 163);
-  // margin: 10px 5%;
-  gap: 50px;
+  justify-content: center;
 
-  .logo{
+  .navbar-menu {
+    display: flex;
+    background: transparent;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    padding: 10px 3%;
+    box-shadow: 0px 2px 2px rgb(168, 159, 163);
+    box-shadow: 2px 2px 4px rgb(82, 56, 56);
+    justify-content: space-between;
+    gap: 20px;
+    margin: 0 auto;
 
-    img{
-      width: 40px;
+    .logo {
+      display: flex;
+      gap: 30px;
 
-    }
-  }
-  .search{
-    input{
-      border: 0;
-      border: 1px solid #6b7676;
-      background: #fff;
-      height: 41px;
-      width: 240px;
-      border-radius: 40px;
-      // position: absolute;
+      img {
+        width: 43px;
+        height: 43px;
 
-      &::placeholder{
-        font-size: 14px;
-        padding: 10px 10px 10px 30px;
+      }
+
+      .search {
+        input {
+          border: 0;
+          border: 1px solid #6b7676;
+          background: #fff;
+          height: 41px;
+          width: 286px;
+          border-radius: 40px;
+          // position: absolute;
+
+          &::placeholder {
+            font-size: 14px;
+            padding: 10px 10px 10px 30px;
+          }
+        }
+
+        .search-icon {
+          position: relative;
+          top: 0;
+          left: 0;
+        }
       }
     }
-    .search-icon{
-      position: relative;
-      top: 0;
-      left: 0;
+
+    .nav-list {
+      ul {
+        display: flex;
+        gap: 50px;
+        font-weight: 600;
+
+        li {
+          list-style: none;
+          font-size: 16px;
+          display: inline-flex;
+          gap: 10px;
+          align-items: center;
+          a {
+            text-decoration: none;
+            color: #0B0A33;
+          }
+          .arrow-down{
+            color: #448FFF;
+          }
+        }
+      }
+    }
+
+    .geolocation-btn {
+
+      button {
+        background: #4457FF;
+        border: 0;
+        padding: 13px 25px;
+        font-size: 16px;
+        color: #fff;
+        border-radius: 30px;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      .location-dot {
+        color: #fff;
+        padding-right: 5px;
+      }
     }
   }
-  .nav-list{
-    ul{
+}
+
+
+// ----------------------------------------------------- Hero Section -----------------------------------------------------
+.hero-container{
+  display: flex;
+  background: url('../src/assets/img/Vector.png');
+  height: 740px;
+  justify-content: center;
+  align-items: center;
+
+  .hero-bg{
+    background: #F3F5FF;
+    display: flex;
+    justify-content: center;
+    
+    height: 367px;
+    width: 500px;
+
+    .hero-section{
       display: flex;
       flex-direction: column;
+      gap: 12px;
+
+      h1{
+        color: #0B0A33;
+        font-size: 54px;
+        font-weight: 500;
+      }
+      h2{
+        font-size: 20px;
+        font-weight: 500;
+        color: #6B7276;
+      }
+      .search-hero{
+
+        input {
+            border: 0;
+            border: 1px solid #6b7676;
+            background: #fff;
+            height: 55px;
+            width: 100%;
+            border-radius: 40px;
+            // position: absolute;
+        
+            &::placeholder {
+              font-size: 14px;
+              padding: 10px 10px 10px 30px;
+            }
+          }
+      }
+    }
+  }
+}
+
+
+// ----------------------------------------------------- Booking Section -----------------------------------------------------
+.booking-section-container{
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  background: violet;
+
+  .booking-section{
+    height: 469px;
+    background: #fff;
+    width: 1728px;
+    height: 548px;
+    display: flex;
+    justify-content: center;
+
+    .booking-group{
+      background: #0B0A33;
+      height: 469px;
+      width: 1272px;
+      margin-top: 30px;
+      color: #4457FF;
     }
   }
 }

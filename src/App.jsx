@@ -2,6 +2,8 @@ import { useState } from 'react'
 
 import './App.scss'
 import NavBar from './components/NavBar'
+import HeroSection from './components/HeroSection'
+import BookingSection from './components/BookingSection'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -9,6 +11,8 @@ function App() {
   return (
     <>
     <NavBar/>
+    <HeroSection/>
+    <BookingSection/>
     </>
   )
 }
