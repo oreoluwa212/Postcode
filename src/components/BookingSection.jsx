@@ -65,7 +65,13 @@ const BookingSection = () => {
                   <img src={flag2} alt="" /> Vierville-sur-Mer
                 </p>
               </div>
-              <button><FontAwesomeIcon icon={faSearch}/> Discover</button>
+              <button>
+                <FontAwesomeIcon icon={faSearch} /> Discover
+              </button>
+            </div>
+          </div>
+          <div className="onew">
+            <div className="experiment">
             </div>
           </div>
         </div>
