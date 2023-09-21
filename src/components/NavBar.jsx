@@ -34,8 +34,7 @@ const NavBar = () => {
                 <a href="#">Postcode Lottery</a>
               </li>
               <li class="has-dropdown not-click">
-                <a href="#">Help and Information</a>
-                <FontAwesomeIcon className="arrow-down" icon={faCaretDown} />
+                <a href="#">Help and Information</a><FontAwesomeIcon className="arrow-down" icon={faCaretDown} />
               </li>
             </ul>
           </div>
