@@ -66,12 +66,12 @@ body {
     .nav-list {
       ul {
         display: flex;
-        gap: 50px;
+        gap: 40px;
         font-weight: 600;
 
         li {
           list-style: none;
-          font-size: 16px;
+          font-size: 14px;
           display: inline-flex;
           gap: 10px;
           align-items: center;
@@ -178,9 +178,42 @@ body {
     .booking-group{
       background: #0B0A33;
       height: 469px;
-      width: 1272px;
+      width: 1252px;
       margin-top: 30px;
       color: #4457FF;
+      padding: 10px 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .booking-upper{
+        display: flex;
+        gap: 20px;
+        h2 {
+            font-size: 28px;
+          }
+        
+          .bg-white {
+            background: #fff;
+            height: 70px;
+            width: 1067px;
+          }
+      }
+    }
+
+    .booking-grid{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+
+      .grid1{
+        height: 367px;
+        width: 300px;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     }
   }
 }
