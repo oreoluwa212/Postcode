@@ -5,6 +5,8 @@ import NavBar from './components/NavBar'
 import HeroSection from './components/HeroSection'
 import BookingSection from './components/BookingSection'
 import PopularPostcode from './components/PopularPostcode'
+import PostBox from './components/PostBox'
+import Footer from './components/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,6 +17,8 @@ function App() {
     <HeroSection/>
     <BookingSection/>
     <PopularPostcode/>
+    <PostBox/>
+    <Footer/>
     </>
   )
 }
