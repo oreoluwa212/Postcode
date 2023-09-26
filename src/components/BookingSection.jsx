@@ -1,7 +1,7 @@
 import React from 'react'
-import { Asset7, Asset8, Asset9, flag1, flag2, flag3, flag4, flag5, flag6 } from '../assets';
+import { Asset7, Asset8, Asset9, flag1, flag2, flag3, flag4, flag5, flag6, guest } from '../assets';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faUsers } from '@fortawesome/free-solid-svg-icons';
 
 const BookingSection = () => {
   return (
@@ -11,7 +11,25 @@ const BookingSection = () => {
           <div className="booking-upper">
             <h2>Booking.com</h2>
             <div className="booking">
-              <div className="bg-white"></div>
+              <div className="bg-white">
+                <div className="bg-white-input">
+                  <input
+                    type="text"
+                    placeholder="e.g. city, region, district..."
+                    className="city"
+                  />
+                  <input
+                    type="text"
+                    placeholder="e.g. city, region, district..."
+                    className="city1"
+                  />
+                  <button className="search-btn">Search</button>
+                </div>
+                <button className="guests-btn">
+                  <FontAwesomeIcon icon={faUsers} />
+                  <p>Guest</p>
+                </button>
+              </div>
             </div>
           </div>
           <div className="booking-grid">
@@ -71,8 +89,7 @@ const BookingSection = () => {
             </div>
           </div>
           <div className="onew">
-            <div className="experiment">
-            </div>
+            <div className="experiment"></div>
           </div>
         </div>
       </div>

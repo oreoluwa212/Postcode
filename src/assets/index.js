@@ -10,6 +10,7 @@ import flag3 from './img/flag3.png'
 import flag4 from './img/flag4.png'
 import flag5 from './img/flag5.png'
 import flag6 from './img/flag6.png'
+import guest from './img/Vector.svg'
 
 
-export { Logo, Vector, Vector2, Asset7, Asset8, Asset9, flag1, flag2, flag3, flag4, flag5, flag6 }
+export { Logo, Vector, Vector2, Asset7, Asset8, Asset9, flag1, flag2, flag3, flag4, flag5, flag6, guest }
