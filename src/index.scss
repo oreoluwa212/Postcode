@@ -480,7 +480,7 @@ body {
 
 // ----------------------------------------------------- Footer Section -----------------------------------------------------
 .footer-container{
-  height: 500px;
+  height: 400px;
   background-image: url('../src/assets/img/Vector3.png');
   background-repeat: no-repeat;
   background-position: center;
@@ -492,8 +492,58 @@ body {
   align-items: center;
 
   .footer-inner{
-    background: #fff;
-    height: 250px;
-    width: 1358px;
+    height: 350px;
+    width: 1400px;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    
+
+    a{
+      text-decoration: none;
+      font-size: 16px;
+      color: #fff;
+    }
+    li{
+      list-style: none;
+      text-align: left;
+    }
+
+    .footer-grid{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      .first{
+        ul{
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+        }
+        
+      }
+      .second{
+        margin-left: 150px;
+
+        ul{
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+        }
+      }
+      
+    }
+    
   }
+    .copyright {
+      color: #fff;
+      font-size: 12px;
+      font-weight: 500;
+
+
+      h5{
+        font-size: 14px;
+      font-weight: 500;
+      }
+  
+    }
 }
